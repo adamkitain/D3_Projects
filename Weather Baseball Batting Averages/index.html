@@ -202,48 +202,6 @@ function ready(err, data) {
       .attr("transform", "rotate(-90)")
       .text("Batting Average");
 
-
-  // function drawChartForCountry(countryName) {
-  //   var thisCountry = data.filter(function(d) { return d.country == countryName; });
-
-  //   incomeByCOP = d3.nest()
-  //       .key(function(d) { return d.cutoff; })
-  //       .entries(thisCountry);
-
-  //   console.log(incomeByCOP);
-
-  //   var countryLineGroup = svg.selectAll(".country-line")
-  //       .data(incomeByCOP);
-
-  //   countryLineGroup
-  //       .classed("g-update", true);
-
-  //   // 2. Do your `enter()` selection, and give this selection a class of `g-enter`. 
-  //   var countryLineEnter = countryLineGroup
-  //       .enter()
-  //       .append("path")
-  //       .attr("class", "country-line g-enter")
-  //       .attr("d", function(d) { return line(d.values); });
-
-  //   // 4. Make a new `selectAll` call, which will select all your elements, including those you just appended. Position your new circles accordingly.
-  //   var allLines = svg.selectAll(".country-line")
-  //       .transition().duration(400)
-  //       .attr("d", function(d) { return line(d.values); });
-
-  //   // 5. Sometimes your new data join will have less data than your old one, so you will have to perform an `exit()` selection and remove them from the SVG. Give this selection a class of `g-exit`. (A transition on this could help)
-  //   countryLineGroup.exit()
-  //       .attr("class", "g-exit")
-  //       .transition()
-  //       .duration(300)
-  //       .style("opacity", 0)
-  //       .remove();
-
-  // }
-
-  // drawChartForCountry("United States");
-
-  // // window.drawChartForCountry = drawChartForCountry;
-
 }
 
 </script>
